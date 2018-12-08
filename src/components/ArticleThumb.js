@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link} form 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const ArticleThumb = (props) => {
 
-  const {title, media, summary} = props.articleThumb;
+  const {title, media, summary, id} = props.articleThumb;
 
   return (
     <div>
@@ -15,3 +15,5 @@ const ArticleThumb = (props) => {
   )
 
 }
+
+export default ArticleThumb;

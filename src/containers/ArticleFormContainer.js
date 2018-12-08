@@ -8,6 +8,7 @@ class ArticleFormContainer extends Component {
     this.state = {
       categories: []
     }
+    this.handleArticlePost = this.handleArticlePost.bind(this);
 
   }
 
