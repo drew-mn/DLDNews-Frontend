@@ -10,7 +10,7 @@ const Featured = () => {
     dots: false,
     infinite: true,
     autoplay: true,
-    speed: 3000
+    speed: 8000
   }
 
   return (
