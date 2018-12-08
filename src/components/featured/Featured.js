@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 
 import story1 from '../../resources/images/story1.png';
+import story2 from '../../resources/images/story2.jpg';
 
 const Featured = () => {
 
@@ -33,7 +34,18 @@ const Featured = () => {
           >
           </div>
           <p>Headline goes here</p>
+        </div>
 
+        <div>
+          <div
+            className="slider_image"
+            style={{
+              background:`url(${story2})`,
+              height: `${window.innerHeight}px`
+            }}
+          >
+          </div>
+          <p>Headline goes here</p>
         </div>
       </Slider>
 
