@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './components/header/Header';
 import Navbar from './components/header/Navbar';
-import Featured from './components/featured/Featured';
+import MainContainer from './containers/MainContainer';
 
 
 class App extends Component {
   render() {
     return (
       <div className='app' style={{background: 'white'}}>
+      <Router>
         <>
           <Header/>
           <Navbar/>
-          <Featured/>
+
+          <Switch>
+            <Route exact path="/articles" component={MainContainer} />
+            <Route exact path="/articles/new" component={ArticleFormContainer} />
+            <Route exact path="/articles/:id" render={ (props) => {
+              const id = props.match.params.id;
+              return <FullArticleContainer id={id}/>
+            }} />
+          </Switch>
+
         </>
+      </Router>
       </div>
     )
   }
