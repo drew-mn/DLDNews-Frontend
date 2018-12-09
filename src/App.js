@@ -6,7 +6,7 @@ import Navbar from './components/header/Navbar';
 import MainContainer from './containers/MainContainer';
 import ArticleFormContainer from './containers/ArticleFormContainer';
 import FullArticleContainer from './containers/FullArticleContainer';
-import Featured from './components/featured/Featured';
+
 
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
         <React.Fragment>
           <Header/>
           <Navbar/>
-          <Featured/>
+
 
           <Switch>
             <Route exact path="/articles" component={MainContainer} />

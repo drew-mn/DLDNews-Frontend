@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Request from '../helpers/Request';
 import ArticleList from '../components/ArticleList';
+import Featured from '../components/featured/Featured';
 
 class MainContainer extends Component {
   constructor(props){
@@ -17,7 +18,10 @@ class MainContainer extends Component {
 
   render(){
     return (
-      <ArticleList articles={this.state.articles}/>
+      <>
+        <Featured/>
+        <ArticleList articles={this.state.articles}/>
+      </>
     )
   }
 
