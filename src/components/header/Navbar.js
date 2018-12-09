@@ -2,8 +2,7 @@ import React from 'react';
 
 const Navbar = (props) => {
   return (
-    <header>
-
+    <header id="navbar">
       <ul>
         <li className="navLink">
           <a href="/"/>Politics
@@ -20,7 +19,6 @@ const Navbar = (props) => {
         <li className="navLink">
           <a href="/"/>Human Interest
         </li>
-
       </ul>
     </header>
   )
