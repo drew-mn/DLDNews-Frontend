@@ -7,7 +7,7 @@ import story2 from '../../resources/images/story2.jpg';
 const Featured = () => {
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: true,
     speed: 8000
