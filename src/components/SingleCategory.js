@@ -4,17 +4,34 @@ import {Link} from 'react-router-dom';
 
 const SingleCategory = (props) => {
 
-  const {title, media, summary, category} = props.singleCategory;
+
+  const articles = props.articles.map(article => {
+    return (
+      <li key={article.id} className="article-thumb">
+        <ArticleThumb articleThumb={article}/>
+      </li>
+    )
+  })
 
   return (
-    <div>
-      <Link to={'articles/' + category}
-      className='single-category'> {media}</Link>
-      <h4>{title}</h4>
-      <p>{summary}</p>
-    </div>
+    <ul>
+      {articles}
+    </ul>
   )
 
 }
+
+//   const {title, media, summary, id} = props.articles;
+//
+//   return (
+//     <div>
+//       <Link to={'articles/' + id}
+//       className='single-category'> {media}</Link>
+//       <h4>{title}</h4>
+//       <p>{summary}</p>
+//     </div>
+//   )
+//
+// }
 
 export default SingleCategory;
