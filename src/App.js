@@ -6,7 +6,7 @@ import Navbar from './components/header/Navbar';
 import MainContainer from './containers/MainContainer';
 import ArticleFormContainer from './containers/ArticleFormContainer';
 import FullArticleContainer from './containers/FullArticleContainer';
-
+import SingleCategoryContainer from './containers/SingleCategoryContainer';
 
 
 class App extends Component {
@@ -17,8 +17,6 @@ class App extends Component {
         <React.Fragment>
           <Header/>
           <Navbar/>
-
-
           <Switch>
             <Route exact path="/articles" component={MainContainer} />
             <Route exact path="/articles/new" component={ArticleFormContainer} />
@@ -26,6 +24,12 @@ class App extends Component {
               const id = props.match.params.id;
               return <FullArticleContainer id={id}/>
             }} />
+
+          <Route exact path="/articles/:category" render={ (props) => {
+              const category = props.match.params.category;
+              return <SingleCategoryContainer category={category}/>
+            }} />
+
           </Switch>
 
         </React.Fragment>
