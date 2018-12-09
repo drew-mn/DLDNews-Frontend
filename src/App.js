@@ -17,8 +17,6 @@ class App extends Component {
         <React.Fragment>
           <Header/>
           <Navbar/>
-
-
           <Switch>
             <Route exact path="/articles" component={MainContainer} />
             <Route exact path="/articles/new" component={ArticleFormContainer} />
