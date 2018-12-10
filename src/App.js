@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, withRouter} from 'react-router-dom';
 import Header from './components/header/Header';
 import Navbar from './components/header/Navbar';
 import MainContainer from './containers/MainContainer';
@@ -28,6 +28,7 @@ class App extends Component {
           <Route exact path="/categories/:id" render={ (props) => {
               const id = props.match.params.id;
               return <SingleCategoryContainer id={id}/>
+
             }} />
 
           </Switch>
