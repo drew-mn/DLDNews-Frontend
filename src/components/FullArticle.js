@@ -8,7 +8,7 @@ const FullArticle = (props) => {
   return (
     <div className="FullSingleArticle">
       <h1>{props.article.title}</h1>
-      {/* <img src='{props.article.media}'/> */}
+      <img src='{props.article.media}'/>
       <h4>{props.article.author.name}</h4>
       <p>{props.article.summary}</p>
       <p>{props.article.fullText}</p>

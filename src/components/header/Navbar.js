@@ -6,6 +6,9 @@ const Navbar = (props) => {
     <header id="navbar">
       <ul>
         <li className="navLink">
+          <Link to="/articles">Home</Link>
+        </li>
+        <li className="navLink">
           <Link to="/categories/1">Politics</Link>
         </li>
         <li className="navLink">
