@@ -31,6 +31,7 @@ const ArticleForm = (props) => {
     <input type="text" placeholder="Author" name="author"/>
     <input type="date" placeholder="Date" name="date"/>
     <input type="text" placeholder="Media" name="media"/>
+    <button type="submit">Save</button>
     </form>
   )
 }

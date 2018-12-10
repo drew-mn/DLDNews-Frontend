@@ -8,6 +8,8 @@ class FullArticleContainer extends Component {
     this.state = {
       article: null
     }
+
+    this.handleBookmark = this.handleBookmark.bind(this);
   }
   componentDidMount(){
     let request = new Request();
@@ -17,10 +19,18 @@ class FullArticleContainer extends Component {
     })
   }
 
+  handleBookmark(article){
+    const url = '/api/articles/' + article.id;
+    let request = new Request();
+    request.put(url, article).then(data => {
+      window.location = '/articles'
+    })
+  }
+
   render(){
     return (
       <>
-        <FullArticle article={this.state.article}/>
+        <FullArticle article={this.state.article} handleBookmarkClick={this.handleBookmark}/>
       </>
     )
   }
