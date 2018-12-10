@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import './Header.css';
 
 class Header extends Component {
 
@@ -37,7 +38,7 @@ class Header extends Component {
 
       <Toolbar>
         <div className="header_logo">
-          <div id="site_name">DL News</div>
+          <img/>
         </div>
 
       </Toolbar>

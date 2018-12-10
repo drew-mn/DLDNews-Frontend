@@ -6,25 +6,25 @@ const Navbar = (props) => {
     <header id="navbar">
       <ul>
         <li className="navLink">
-          <Link to="/articles">Home</Link>
+          <Link to="/articles">HOME</Link>
         </li>
         <li className="navLink">
-          <Link to="/categories/1">Politics</Link>
+          <Link to="/categories/1">POLITICS</Link>
         </li>
         <li className="navLink">
-          <Link to="/categories/2">Science</Link>
+          <Link to="/categories/2">SCIENCE</Link>
         </li>
         <li className="navLink">
-          <Link to="/categories/3">Technology</Link>
+          <Link to="/categories/3">TECHNOLOGY</Link>
         </li>
         <li className="navLink">
-          <Link to="/categories/4">Business</Link>
+          <Link to="/categories/4">BUSINESS</Link>
         </li>
         <li className="navLink">
-          <Link to="/categories/5">Human Interest</Link>
+          <Link to="/categories/5">HUMAN INTEREST</Link>
         </li>
         <li className="navLink">
-          <Link to="/articles/new">Admin</Link>
+          <Link to="/articles/new">ADMIN</Link>
         </li>
       </ul>
     </header>
