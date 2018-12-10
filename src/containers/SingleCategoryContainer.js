@@ -7,7 +7,18 @@ class SingleCategoryContainer extends Component {
     super(props);
     this.state = {articles: []}
   }
+
+
   componentDidMount(){
+    let request = new Request();
+    const url = '/api/categories/' + this.props.id + '?projection=embedForCategory';
+    request.get(url).then(data => {
+      this.setState({articles: data.articles})
+    })
+  }
+
+
+  componentDidUpdate(){
     let request = new Request();
     const url = '/api/categories/' + this.props.id + '?projection=embedForCategory';
     request.get(url).then(data => {
