@@ -41,7 +41,7 @@ ul li {
 =========*/
 
 .slider_wrapper {
-  height: 500px;
+  height: 400px;
   overflow: hidden;
   background: center center no-repeat fixed;
 }
@@ -49,4 +49,15 @@ ul li {
 .slider_image {
   background: center center no-repeat fixed;
   background-size: cover;
+}
+
+
+/*=========
+  SLIDER
+=========*/
+
+.article-thumb {
+  display: inline-block;
+  border-bottom: 1px solid black;
+  width: 200px;
 }

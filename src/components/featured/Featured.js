@@ -33,7 +33,7 @@ const Featured = () => {
             }}
           >
           </div>
-          <p>Headline goes here</p>
+
         </div>
 
         <div>
