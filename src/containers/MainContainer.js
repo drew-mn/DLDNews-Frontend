@@ -19,7 +19,7 @@ class MainContainer extends Component {
   render(){
     return (
       <>
-        <Featured/>
+        <Featured articles={this.state.articles}/>
         <ArticleList articles={this.state.articles}/>
       </>
     )

@@ -7,13 +7,15 @@ import tech1 from '../../resources/images/tech1.jpg';
 import business1 from '../../resources/images/business1.jpg';
 import other1 from '../../resources/images/other1.jpg';
 
-const Featured = () => {
+const Featured = (props) => {
 
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 4000
+    speed: 5000,
+    fade: true
+
   }
 
   return (
@@ -33,13 +35,13 @@ const Featured = () => {
           <div
             className="slider_image"
             style={{
-              background:`url(${politics1})`,
+              background: `url(${politics1})`,
               height: '350px'
             }}
           >
           </div>
-          <h2>Heading</h2>
-          <p>Summary</p>
+          <h2>{props.articles.title}</h2>
+          <p>{props.articles.summary}</p>
         </div>
 
         <div>
