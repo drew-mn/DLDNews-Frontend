@@ -6,7 +6,7 @@ const ArticleThumb = (props) => {
   const {title, media, summary, id} = props.articleThumb;
 
   return (
-    <div>
+    <div class-name="article-thumb">
       <Link to={'articles/' + id}
       className='headline'> {media}</Link>
       <h4>{title}</h4>

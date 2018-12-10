@@ -35,16 +35,6 @@ header {
   background-color: #f6f8f9;
   font-weight: bold;
   padding: 1px;
-
-
-}
-
-ul li {
-  display: inline;
-  list-style-type: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0px;
 }
 
 #navbar a:active {
@@ -73,7 +63,9 @@ ul li {
 .slider_wrapper {
   margin: 0 auto;
   overflow: hidden;
-  border: 3px solid black;
+  border: 1px solid black;
+  border-color: #e3e3e3;
+  margin-top: 30px;
 }
 
 .slider_image {
@@ -81,10 +73,34 @@ ul li {
   border: 1px solid black;
 }
 
+.feature-text h2{
+  margin-left: 20px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.feature-text p{
+  margin-left: 20px;
+  margin-bottom: -20px;
+  font-size: 15px;
+  color: #949697
+}
+
+
 
 /*=========
   THUMB
 =========*/
+
+ul li {
+  display: inline;
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0px;
+  overflow: hidden;
+}
 
 .article-thumb {
   display: inline-block;
@@ -94,12 +110,53 @@ ul li {
   margin: 10px;
 }
 
-.home-article-sections{
+
+.home-politics{
   overflow: auto;
-    white-space: nowrap;
- max-width: 900px;
+  white-space: nowrap;
+  max-width: 870px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
 
+.home-science{
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 870px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-technology{
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 870px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-human{
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 870px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-business{
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 870px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-article-sections h3 {
+  margin-left: 200px;
+  text-transform: uppercase;
 }

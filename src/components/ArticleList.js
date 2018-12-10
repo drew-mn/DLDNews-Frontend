@@ -48,21 +48,42 @@ const ArticleList = (props) => {
 
   return (
     <div className="home-article-sections">
+
+      <div className="politics-label">
+      <h3>Politics</h3>
       <ul className="home-politics">
         {articles_politics}
       </ul>
+    </div>
+
+    <div className="science-label">
+    <h3>Science</h3>
       <ul className="home-science">
         {articles_science}
       </ul>
+      </div>
+
+      <div className="technology-label">
+      <h3>Technology</h3>
       <ul className="home-technology">
         {articles_tech}
       </ul>
+      </div>
+
+      <div className="business-label">
+      <h3>Business</h3>
       <ul className="home-business">
         {articles_business}
       </ul>
-      <ul className="home-humaninterest">
+      </div>
+
+      <div className="human-label">
+      <h3>Science</h3>
+      <ul className="home-human">
         {articles_human}
       </ul>
+      </div>
+
     </div>
   )
 
