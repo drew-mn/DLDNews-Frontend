@@ -9,6 +9,10 @@ import other1 from '../../resources/images/other1.jpg';
 
 const Featured = (props) => {
 
+  const display = props.articles.map((story) => {
+    return <p key={story.id}>{story.title} {story.summary}</p>
+  })
+
   const settings = {
     dots: true,
     infinite: true,
@@ -36,12 +40,11 @@ const Featured = (props) => {
             className="slider_image"
             style={{
               background: `url(${politics1})`,
-              height: '350px'
+              height: '330px'
             }}
           >
           </div>
-          <h2>{props.articles.title}</h2>
-          <p>{props.articles.summary}</p>
+          {display[0]}
         </div>
 
         <div>
@@ -49,12 +52,11 @@ const Featured = (props) => {
             className="slider_image"
             style={{
               background:`url(${science1})`,
-              height: '350px'
+              height: '330px'
             }}
           >
           </div>
-          <h2>Heading</h2>
-          <p>Summary</p>
+          {display[5]}
         </div>
 
         <div>
@@ -62,12 +64,11 @@ const Featured = (props) => {
             className="slider_image"
             style={{
               background:`url(${tech1})`,
-              height: '350px'
+              height: '330px'
             }}
           >
           </div>
-          <h2>Heading</h2>
-          <p>Summary</p>
+          {display[10]}
         </div>
 
         <div>
@@ -75,12 +76,11 @@ const Featured = (props) => {
             className="slider_image"
             style={{
               background:`url(${business1})`,
-              height: '350px'
+              height: '330px'
             }}
           >
           </div>
-          <h2>Heading</h2>
-          <p>Summary</p>
+          {display[15]}
         </div>
 
         <div>
@@ -88,12 +88,11 @@ const Featured = (props) => {
             className="slider_image"
             style={{
               background:`url(${other1})`,
-              height: '350px'
+              height: '330px'
             }}
           >
           </div>
-          <h2>Heading</h2>
-          <p>Summary</p>
+          {display[20]}
         </div>
 
       </Slider>
