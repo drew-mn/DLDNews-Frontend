@@ -37,8 +37,8 @@ class Header extends Component {
       >
 
       <Toolbar>
-        <div className="header_logo">
-          <img/>
+        <div id="header-id">
+          <img />
         </div>
 
       </Toolbar>
