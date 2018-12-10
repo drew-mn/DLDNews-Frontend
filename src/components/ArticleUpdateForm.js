@@ -30,7 +30,7 @@ const ArticleUpdateForm = (props) => {
     <select name="category">
       {categoryOptions}
     </select>
-    <input type="text" placeholder="Author" name="author" defaultValue={props.article.author}/>
+    <input type="text" placeholder="Author" name="author" defaultValue={props.article.author.name}/>
     <input type="date" placeholder="Date" name="date" defaultValue={props.article.date}/>
     <input type="text" placeholder="Media" name="media" defaultValue={props.article.media}/>
     <button type="submit">Save</button>

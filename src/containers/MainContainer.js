@@ -11,8 +11,17 @@ class MainContainer extends Component {
 
   componentDidMount(){
     let request = new Request();
-    request.get('/api/articles').then(data => {
+    request.get('/api/articles?size=50').then(data => {
       this.setState({articles: data._embedded.articles})
+    })
+  }
+
+  componentDidUpdate(){
+    let request = new Request();
+    request.get('/api/articles?size=50').then(data => {
+      if(this.state.articles.length != data._embedded.articles.length){
+      this.setState({articles: data._embedded.articles})
+    }
     })
   }
 
