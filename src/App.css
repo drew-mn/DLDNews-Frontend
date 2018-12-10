@@ -41,9 +41,10 @@ ul li {
 =========*/
 
 .slider_wrapper {
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   background: center center no-repeat fixed;
+  border: 4px solid black;
 }
 
 .slider_image {
@@ -53,7 +54,7 @@ ul li {
 
 
 /*=========
-  SLIDER
+  THUMB
 =========*/
 
 .article-thumb {
