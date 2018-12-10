@@ -25,9 +25,9 @@ class App extends Component {
               return <FullArticleContainer id={id}/>
             }} />
 
-          <Route exact path="/categories/:category" render={ (props) => {
-              const category = props.match.params.category;
-              return <SingleCategoryContainer category={category}/>
+          <Route exact path="/categories/:id" render={ (props) => {
+              const id = props.match.params.id;
+              return <SingleCategoryContainer id={id}/>
             }} />
 
           </Switch>

@@ -21,17 +21,4 @@ const SingleCategory = (props) => {
 
 }
 
-//   const {title, media, summary, id} = props.articles;
-//
-//   return (
-//     <div>
-//       <Link to={'articles/' + id}
-//       className='single-category'> {media}</Link>
-//       <h4>{title}</h4>
-//       <p>{summary}</p>
-//     </div>
-//   )
-//
-// }
-
 export default SingleCategory;
