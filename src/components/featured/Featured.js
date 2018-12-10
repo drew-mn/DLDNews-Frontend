@@ -1,19 +1,25 @@
 import React from 'react';
 import Slider from 'react-slick';
 
-import story1 from '../../resources/images/story1.jpg';
-import story2 from '../../resources/images/story2.jpg';
-import story3 from '../../resources/images/story3.jpg';
-import story4 from '../../resources/images/story4.jpg';
-import story5 from '../../resources/images/story5.jpg';
+import politics1 from '../../resources/images/politics1.jpg';
+import science1 from '../../resources/images/science1.jpg';
+import tech1 from '../../resources/images/tech1.jpg';
+import business1 from '../../resources/images/business1.jpg';
+import other1 from '../../resources/images/other1.jpg';
 
-const Featured = () => {
+const Featured = (props) => {
+
+  const display = props.articles.map((story) => {
+    return <p key={story.id}>{story.title} {story.summary}</p>
+  })
 
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 8000
+    speed: 5000,
+    fade: true
+
   }
 
   return (
@@ -22,7 +28,9 @@ const Featured = () => {
       style={{
         position: 'relative',
         overflow: 'hidden',
-        width: '580px'
+        width: '580px',
+        height: '500px'
+
       }}
     >
 
@@ -31,56 +39,60 @@ const Featured = () => {
           <div
             className="slider_image"
             style={{
-              background:`url(${story1})`,
-              height: `${window.innerHeight}px`
+              background: `url(${politics1})`,
+              height: '330px'
             }}
           >
           </div>
-
+          {display[0]}
         </div>
 
         <div>
           <div
             className="slider_image"
             style={{
-              background:`url(${story2})`,
-              height: `${window.innerHeight}px`
+              background:`url(${science1})`,
+              height: '330px'
             }}
           >
           </div>
+          {display[5]}
         </div>
 
         <div>
           <div
             className="slider_image"
             style={{
-              background:`url(${story3})`,
-              height: `${window.innerHeight}px`
+              background:`url(${tech1})`,
+              height: '330px'
             }}
           >
           </div>
+          {display[10]}
         </div>
 
         <div>
           <div
             className="slider_image"
             style={{
-              background:`url(${story4})`,
-              height: `${window.innerHeight}px`
+              background:`url(${business1})`,
+              height: '330px'
             }}
           >
           </div>
+          {display[15]}
         </div>
 
         <div>
           <div
             className="slider_image"
             style={{
-              background:`url(${story5})`,
-              height: `${window.innerHeight}px`
+              background:`url(${other1})`,
+              height: '330px'
             }}
           >
           </div>
+          {display[20]}
         </div>
 
       </Slider>
