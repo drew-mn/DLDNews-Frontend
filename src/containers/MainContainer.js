@@ -19,7 +19,7 @@ class MainContainer extends Component {
   componentDidUpdate(){
     let request = new Request();
     request.get('/api/articles?size=50').then(data => {
-      if(this.state.articles.length != data._embedded.articles.length){
+      if(this.state.articles.length !== data._embedded.articles.length){
       this.setState({articles: data._embedded.articles})
     }
     })
