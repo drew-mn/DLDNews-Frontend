@@ -10,10 +10,10 @@ import other1 from '../../resources/images/other1.jpg';
 const Featured = (props) => {
 
   const display = props.articles.map((story) => {
-    return <p key={story.id}>
+    return <div key={story.id}>
       <h2>{story.title}</h2>
       <p>{story.summary}</p>
-    </p>
+    </div>
   })
 
   const settings = {
