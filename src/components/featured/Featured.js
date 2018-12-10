@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 
 import politics1 from '../../resources/images/politics1.jpg';
 import science1 from '../../resources/images/science1.jpg';
-import tech1 from '../../resources/images/tech1.jpg';
+import tech1 from '../../resources/images/tech1.png';
 import business1 from '../../resources/images/business1.jpg';
 import other1 from '../../resources/images/other1.jpg';
 

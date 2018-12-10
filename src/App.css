@@ -43,7 +43,6 @@ ul li {
 
 .slider_wrapper {
   margin: 0 auto;
-  height: 350px;
   overflow: hidden;
   background: center center no-repeat fixed;
   border: 3px solid black;
@@ -63,6 +62,6 @@ ul li {
 .article-thumb {
   display: inline-block;
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
   padding: 8px;
 }
