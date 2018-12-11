@@ -6,6 +6,10 @@ const ArticleForm = (props) => {
     return <option key={category.id} value={category._links.self.href}>{category.label}</option>
   })
 
+  const authorOptions = props.authors.map((author) => {
+    return <option key={author.id} value={author._links.self.href}>{author.name}</option>
+  })
+
   function handleSubmit (event){
     event.preventDefault();
     const article = {
@@ -17,6 +21,7 @@ const ArticleForm = (props) => {
       "date": event.target.date.value,
       "media": event.target.media.value
     }
+    // debugger;
     props.handleArticlePost(article);
   }
 
@@ -28,7 +33,9 @@ const ArticleForm = (props) => {
     <select name="category">
       {categoryOptions}
     </select>
-    <input type="text" placeholder="Author" name="author"/>
+    <select name="author">
+      {authorOptions}
+    </select>
     <input type="date" placeholder="Date" name="date"/>
     <input type="text" placeholder="Media" name="media"/>
     <button type="submit">Save</button>

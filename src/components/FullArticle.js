@@ -22,7 +22,7 @@ const FullArticle = (props) => {
     <div className="FullSingleArticle">
       <h1>{props.article.title}</h1>
       <img src={props.article.media} alt={props.article.title}/>
-      {/* <h4>{props.article.author.name}</h4> */}
+      <h4>{props.article.author.name}</h4>
       {/* <button type="submit" onClick={onSave}>Bookmark for Later</button> */}
       <p>{props.article.summary}</p>
       <p>{props.article.fullText}</p>
