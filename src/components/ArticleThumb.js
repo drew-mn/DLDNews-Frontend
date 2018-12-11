@@ -9,7 +9,7 @@ const ArticleThumb = (props) => {
   function calcReadTime(){
     const text = props.articleThumb.fullText;
     const wordCount = text.split(' ').length;
-    const readTime = wordCount / 250;
+    const readTime = Math.ceil(wordCount / 250);
     return readTime;
   }
 
