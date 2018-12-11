@@ -110,9 +110,9 @@ ul li {
 
 .article-thumb {
   display: inline-block;
-  border: 1px solid #e3e3e3;
+  /* border: 1px solid #e3e3e3; */
   width: 250px;
-  height: 345px;
+  height: 350px;
   /* padding: 8px; */
   margin: 10px;
 
@@ -148,42 +148,66 @@ li.article-thumb{
 }
 
 .home-science{
-  overflow: auto;
+  /* overflow: auto;
   white-space: nowrap;
   max-width: 870px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  flex-flow: row;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(1, 1fr);
+ grid-gap: 5px;
+ align-self: flex-start;
 }
 
 .home-technology{
-  overflow: auto;
+  /* overflow: auto;
   white-space: nowrap;
   max-width: 870px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  flex-flow: row;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(1, 1fr);
+ grid-gap: 5px;
+ align-self: flex-start;
 }
 
 .home-human{
-  overflow: auto;
+  /* overflow: auto;
   white-space: nowrap;
   max-width: 870px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  flex-flow: row;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(1, 1fr);
+ grid-gap: 5px;
+ align-self: flex-start;
 }
 
 .home-business{
-  overflow: auto;
+  /* overflow: auto;
   white-space: nowrap;
   max-width: 870px;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
+  flex-flow: row;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-template-rows: repeat(1, 1fr);
+ grid-gap: 5px;
+ align-self: flex-start;
 }
 
 .home-article-sections h3 {
-  margin-left: 200px;
+  margin-left: 50px;
   text-transform: uppercase;
 }
