@@ -18,8 +18,8 @@ const ArticleThumb = (props) => {
       <Link to={'articles/' + id}
       className='headline'> {media}</Link>
       <h4>{title}</h4>
-      <h5>{calcReadTime()} min read </h5>
       <p>{summary}</p>
+      <h5>{calcReadTime()} min read </h5>
     </div>
   )
 
