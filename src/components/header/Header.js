@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
+import {Link} from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -39,6 +40,11 @@ class Header extends Component {
         <div id="header-id">
           <img />
         </div>
+        <ul>
+        <li className="navLink">
+          <Link to="/articles/new"><img src="https://i.ibb.co/0mYsY0d/admin.png" id="admin" alt="admin area" /></Link>
+        </li>
+        </ul>
       </Toolbar>
       </AppBar>
     );
