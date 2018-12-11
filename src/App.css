@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gill Sans", sans-serif;
 }
 
 
@@ -81,6 +81,7 @@ header {
 }
 
 .feature-text h2{
+  font-family: "Gill Sans";
   margin-left: 20px;
   font-size: 30px;
   margin-bottom: 5px;
@@ -91,7 +92,8 @@ header {
   margin-left: 20px;
   margin-bottom: -20px;
   font-size: 15px;
-  color: #949697
+  color: #949697;
+  font-family: "Helvetica Neue";
 }
 
 
@@ -124,6 +126,7 @@ ul li {
   border-radius: 8px 8px 0px 0px;
 }
 
+
 .article-thumb p {
   color: #707070;
 }
@@ -145,6 +148,7 @@ li.article-thumb{
   display: block; */
   /* margin-left: auto;
   margin-right: auto; */
+  font-family: "Gill Sans";
   flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -216,6 +220,7 @@ li.article-thumb{
 .home-article-sections h3 {
   margin-left: 50px;
   text-transform: uppercase;
+  font-family: "Gill Sans"
 }
 
  h5 {
@@ -224,4 +229,28 @@ li.article-thumb{
   float:left;
   margin: 0;
   position: relative;
+}
+
+
+.FullSingleArticle{
+  width: 700px;
+text-align: justify;
+margin-left: 250px;
+}
+
+.FullSingleArticle h1{
+  font-family: "Gill Sans";
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.FullSingleArticle h4{
+  font-family: "Gill Sans";
+  line-height: 150%;
+}
+
+.FullSingleArticle p{
+  font-family: "Helvetica Neue";
+  line-height: 200%;
 }
