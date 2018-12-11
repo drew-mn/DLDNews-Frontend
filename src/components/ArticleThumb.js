@@ -20,6 +20,8 @@ const ArticleThumb = (props) => {
       className='headline'><img src={media} alt={title}/></Link>
       <h4>{title}</h4>
       <p>{summary}</p>
+      
+
       <h5>{calcReadTime()} min read </h5>
     </div>
   )
