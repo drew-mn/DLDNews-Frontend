@@ -11,19 +11,19 @@ class SingleCategoryContainer extends Component {
 
   componentDidMount(){
     let request = new Request();
-    const url = '/api/categories/' + this.props.id + '?projection=embedForCategory';
+    const url = '/api/categories/' + this.props.id;
     request.get(url).then(data => {
-      this.setState({articles: data.articles})
+      this.setState({articles: data._embedded.articles})
     })
   }
 
 
   componentDidUpdate(){
     let request = new Request();
-    const url = '/api/categories/' + this.props.id + '?projection=embedForCategory';
+    const url = '/api/categories/' + this.props.id;
     request.get(url).then(data => {
-      if(this.state.articles.length !== data.articles.length){
-        this.setState({articles: data.articles})
+      if(this.state.articles.length !== data._embedded.articles.length){
+        this.setState({articles: data._embedded.articles})
       }
     })
   }
