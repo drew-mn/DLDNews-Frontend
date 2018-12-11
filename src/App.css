@@ -211,3 +211,11 @@ li.article-thumb{
   margin-left: 50px;
   text-transform: uppercase;
 }
+
+ h5 {
+  color: #707070;
+  vertical-align:bottom;
+  float:left;
+  margin: 0;
+  position: relative;
+}
