@@ -17,6 +17,7 @@ const ArticleForm = (props) => {
       "date": event.target.date.value,
       "media": event.target.media.value
     }
+    // debugger;
     props.handleArticlePost(article);
   }
 

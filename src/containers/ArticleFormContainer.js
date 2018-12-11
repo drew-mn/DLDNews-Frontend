@@ -22,7 +22,7 @@ class ArticleFormContainer extends Component {
   handleArticlePost(article){
     const request = new Request();
     request.post('/api/articles', article).then(() => {
-      window.location = '/articles';
+      // window.location = '/articles';
     })
   }
 
