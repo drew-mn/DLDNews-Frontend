@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family:"Gill Sans", sans-serif;
 }
 
 
@@ -83,17 +83,19 @@ header {
 }
 
 .feature-text h2{
+  font-family: "Gill Sans";
   margin-left: 20px;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
 .feature-text p{
   margin-left: 20px;
-  margin-bottom: -20px;
+  margin-bottom: 15px;
   font-size: 15px;
-  color: #949697
+  color: #949697;
+  font-family: "Helvetica Neue";
 }
 
 
@@ -124,14 +126,27 @@ ul li {
   border-radius: 8px 8px 0px 0px;
 }
 
+
 .article-thumb p {
   color: #707070;
 }
 
-/* timer icon for reading time */
+.article-thumb h4{
+  text-decoration: none;
+  color: black;
+}
+
+.article-thumb h4{
+  text-decoration: none;
+  color: black;
+}
+
+.article-thumb a:link{
+  text-decoration: none;
+}
+
 #timer {
-  padding-left: 10px;
-  padding-bottom: 5px;
+  margin-bottom: -4px;
   height: 18px;
   width: 25px;
 }
@@ -146,6 +161,7 @@ li.article-thumb{
   display: block; */
   /* margin-left: auto;
   margin-right: auto; */
+  font-family: "Gill Sans";
   flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -191,7 +207,7 @@ li.article-thumb{
   display: block;
   margin-left: auto;
   margin-right: auto; */
-  flex-flow: row;
+ flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(1, 1fr);
@@ -217,6 +233,7 @@ li.article-thumb{
 .home-article-sections h3 {
   margin-left: 50px;
   text-transform: uppercase;
+  font-family: "Gill Sans"
 }
 
  h5 {
@@ -227,11 +244,34 @@ li.article-thumb{
   position: relative;
 }
 
-
-/*=========
-  FORM
 =========*/
 
 .form {
   padding-top: 50px;
+=======
+/*=========
+  SINGLE ARTICLE
+=========*/
+
+.FullSingleArticle{
+  width: 700px;
+text-align: justify;
+margin-left: 280px;
+}
+
+.FullSingleArticle h1{
+  font-family: "Gill Sans";
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+.FullSingleArticle h4{
+  font-family: "Gill Sans";
+  line-height: 150%;
+}
+
+.FullSingleArticle p{
+  font-family: "Helvetica Neue";
+  line-height: 200%;
 }
