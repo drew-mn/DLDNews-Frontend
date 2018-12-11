@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 const ArticleThumb = (props) => {
 
   const {title, media, summary, id} = props.articleThumb;
+  // console.log(id);
 
 // assumes average adult reading speed is 250 words per minute
   function calcReadTime(){
@@ -15,7 +16,7 @@ const ArticleThumb = (props) => {
 
   return (
     <div class-name="article-thumb">
-      <Link to={'articles/' + id}
+      <Link to={'/articles/' + id}
       className='headline'><img src={media} alt={title}/></Link>
       <h4>{title}</h4>
       <p>{summary}</p>
