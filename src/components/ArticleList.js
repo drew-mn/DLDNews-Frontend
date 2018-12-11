@@ -78,7 +78,7 @@ const ArticleList = (props) => {
       </div>
 
       <div className="human-label">
-      <h3>Science</h3>
+      <h3>Human Interest</h3>
       <ul className="home-human">
         {articles_human}
       </ul>
