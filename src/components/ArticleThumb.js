@@ -20,13 +20,7 @@ const ArticleThumb = (props) => {
       className='headline'><img src={media} alt={title}/>
       <h4>{title}</h4></Link>
       <p>{summary}</p>
-<<<<<<< HEAD
       <img src="https://i.ibb.co/nPWqWc9/timer.png" alt="timer icon" id="timer"/> <h5>{calcReadTime()} min read </h5>
-=======
-      
-
-      <h5>{calcReadTime()} min read </h5>
->>>>>>> newcategoryview
     </div>
   )
 
