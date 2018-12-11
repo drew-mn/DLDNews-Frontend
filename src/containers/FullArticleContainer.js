@@ -9,6 +9,7 @@ class FullArticleContainer extends Component {
       article: null
     }
 
+    this.handleDelete = this.handleDelete.bind(this)
     this.handleBookmark = this.handleBookmark.bind(this);
   }
   componentDidMount(){
@@ -18,6 +19,14 @@ class FullArticleContainer extends Component {
       this.setState({article: data})
     })
   }
+
+  handleDelete(id){
+  const url = '/api/articles/' + id;
+  let request = new Request()
+  request.delete(url).then(() => {
+    window.location = '/articles'
+  })
+}
 
   handleBookmark(article){
     const url = '/api/articles/' + article.id;
@@ -30,7 +39,7 @@ class FullArticleContainer extends Component {
   render(){
     return (
       <>
-        <FullArticle article={this.state.article} handleBookmarkClick={this.handleBookmark}/>
+        <FullArticle article={this.state.article} handleBookmarkClick={this.handleBookmark} handleDelete={this.handleDelete}/>
       </>
     )
   }
