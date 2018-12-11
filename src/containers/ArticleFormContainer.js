@@ -10,13 +10,15 @@ class ArticleFormContainer extends Component {
       authors: []
     }
     this.handleArticlePost = this.handleArticlePost.bind(this);
-
   }
 
   componentDidMount(){
     const request = new Request();
     request.get('/api/categories').then(data => {
-      this.setState({categories: data._embedded.categories, authors: data._embedded.authors});
+      this.setState({categories: data._embedded.categories});
+    })
+    request.get('/api/authors').then(data => {
+      this.setState({authors: data._embedded.authors});
     })
   }
 
