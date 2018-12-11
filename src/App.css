@@ -84,13 +84,13 @@ header {
   font-family: "Gill Sans";
   margin-left: 20px;
   font-size: 30px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
 .feature-text p{
   margin-left: 20px;
-  margin-bottom: -20px;
+  margin-bottom: 15px;
   font-size: 15px;
   color: #949697;
   font-family: "Helvetica Neue";
@@ -129,6 +129,20 @@ ul li {
 
 .article-thumb p {
   color: #707070;
+}
+
+.article-thumb h4{
+  text-decoration: none;
+  color: black;
+}
+
+.article-thumb h4{
+  text-decoration: none;
+  color: black;
+}
+
+.article-thumb a:link{
+  text-decoration: none;
 }
 
 #timer {
@@ -194,7 +208,7 @@ li.article-thumb{
   display: block;
   margin-left: auto;
   margin-right: auto; */
-  flex-flow: row;
+ flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(1, 1fr);
@@ -231,11 +245,14 @@ li.article-thumb{
   position: relative;
 }
 
+/*=========
+  SINGLE ARTICLE
+=========*/
 
 .FullSingleArticle{
   width: 700px;
 text-align: justify;
-margin-left: 250px;
+margin-left: 280px;
 }
 
 .FullSingleArticle h1{
