@@ -14,6 +14,10 @@ const FullArticle = (props) => {
   //   props.handleBookmark(props.article.id);
   // }
 
+  function onDelete(){
+    props.handleDelete(props.article.id)
+  }
+
   return (
     <div className="FullSingleArticle">
       <h1>{props.article.title}</h1>
@@ -25,8 +29,7 @@ const FullArticle = (props) => {
       <Link to={'/articles/update/' + props.article.id}>
       <button>Edit Article</button>
       </Link>
-
-
+      <button onClick={onDelete}>Delete Article</button>
     </div>
   )
 

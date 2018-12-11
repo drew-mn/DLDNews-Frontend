@@ -27,7 +27,6 @@ const Featured = (props) => {
         overflow: 'hidden',
         width: '700px',
         height: '500px'
-
       }}
     >
 
