@@ -98,8 +98,6 @@ header {
 }
 
 
-
-
 /*=========
   THUMB
 =========*/
@@ -131,6 +129,7 @@ ul li {
   color: #707070;
 }
 
+/* timer icon for reading time */
 #timer {
   padding-left: 10px;
   padding-bottom: 5px;
@@ -227,4 +226,13 @@ li.article-thumb{
   float:left;
   margin: 0;
   position: relative;
+}
+
+
+/*=========
+  FORM
+=========*/
+
+.form {
+  padding-top: 50px;
 }
