@@ -6,7 +6,8 @@ class ArticleFormContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      categories: []
+      categories: [],
+      authors: []
     }
     this.handleArticlePost = this.handleArticlePost.bind(this);
 
@@ -15,7 +16,7 @@ class ArticleFormContainer extends Component {
   componentDidMount(){
     const request = new Request();
     request.get('/api/categories').then(data => {
-      this.setState({categories: data._embedded.categories});
+      this.setState({categories: data._embedded.categories, authors: data._embedded.authors});
     })
   }
 
@@ -28,7 +29,7 @@ class ArticleFormContainer extends Component {
 
   render(){
     return (
-      <ArticleForm categories={this.state.categories} handleArticlePost={this.handleArticlePost}/>
+      <ArticleForm categories={this.state.categories} authors={this.state.authors} handleArticlePost={this.handleArticlePost}/>
     )
   }
 
