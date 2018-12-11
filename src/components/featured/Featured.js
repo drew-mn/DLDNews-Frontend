@@ -51,9 +51,7 @@ const Featured = (props) => {
         <div>
           {display[20]}
         </div>
-
       </Slider>
-
     </div>
   )
 

@@ -39,7 +39,6 @@ class Header extends Component {
         <div id="header-id">
           <img />
         </div>
-
       </Toolbar>
       </AppBar>
     );

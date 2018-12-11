@@ -17,8 +17,8 @@ const ArticleThumb = (props) => {
   return (
     <div class-name="article-thumb">
       <Link to={'/articles/' + id}
-      className='headline'><img src={media} alt={title}/></Link>
-      <h4>{title}</h4>
+      className='headline'><img src={media} alt={title}/>
+      <h4>{title}</h4></Link>
       <p>{summary}</p>
       <h5>{calcReadTime()} min read </h5>
     </div>
