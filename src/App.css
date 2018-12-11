@@ -112,6 +112,11 @@ ul li {
   margin: 10px;
 }
 
+.article-thumb img {
+  background-size: contain;
+  height: 117px;
+}
+
 
 .home-politics{
   overflow: auto;
