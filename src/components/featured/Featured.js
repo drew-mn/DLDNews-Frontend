@@ -15,8 +15,9 @@ const Featured = (props) => {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 5000,
-    fade: true
+    speed: 4000,
+    slide: true
+
   }
 
   return (
