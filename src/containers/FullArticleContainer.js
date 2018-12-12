@@ -34,7 +34,7 @@ class FullArticleContainer extends Component {
     const url = '/api/articles/' + this.state.article.id;
     let request = new Request();
     request.patch(url, article).then(data => {
-      window.location = '/articles'
+      window.location = '/articles/favourites'
     })
   }
 
