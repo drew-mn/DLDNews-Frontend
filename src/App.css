@@ -1,8 +1,12 @@
 body {
-  padding: 0;
+  padding-bottom: 60px;
   margin: 0;
   font-family:"Gill Sans", sans-serif;
 }
+
+/*=========
+  HEADER
+=========*/
 
 
 header {
@@ -17,7 +21,7 @@ header {
   background-position:left;
   position: sticky;
   max-width: 100%;
-  height: 63px;
+  height: 64px;
   padding: 0px;
   margin: 0px;
 }
@@ -56,13 +60,15 @@ header {
 }
 
 #navbar .nav-ul a{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #admin {
-  height: 40px;
-  width: 40px;
+  height: 20px;
+  width: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*=========
@@ -72,9 +78,12 @@ header {
 .slider_wrapper {
   margin: 0 auto;
   overflow: hidden;
-  /* border: 1px solid #e3e3e3; */
+  /* border: 1px solid #e3e3e3;
+  border-color: #e3e3e3; */
   margin-top: 30px;
   margin-bottom: 60px;
+    border-radius: 5px 5px 0px 0px;
+
 }
 
 .slider_image {
@@ -96,6 +105,11 @@ header {
   font-size: 15px;
   color: #949697;
   font-family: "Helvetica Neue";
+}
+
+.feature-text img{
+  width: 700px;
+  height: 350px;
 }
 
 
@@ -123,7 +137,8 @@ ul li {
 .article-thumb img {
   background-size: contain;
   height: 117px;
-  border-radius: 8px 8px 0px 0px;
+  width: 246.67px;
+  border-radius: 5px 5px 0px 0px;
 }
 
 
@@ -155,9 +170,10 @@ li.article-thumb{
 }
 
 .home-politics{
-  /* overflow:auto; */
-  /* white-space: nowrap;
-  max-width:600px;
+
+  overflow: hidden;
+  max-width:1200px;
+  max-height: 380px;
   display: block; */
   /* margin-left: auto;
   margin-right: auto; */
@@ -171,12 +187,10 @@ li.article-thumb{
 }
 
 .home-science{
-  /* overflow: auto;
-  white-space: nowrap;
-  max-width: 870px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; */
+  overflow: hidden;
+  max-width:1200px;
+  max-height: 380px;
+  display: block; */
   flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -186,12 +200,10 @@ li.article-thumb{
 }
 
 .home-technology{
-  /* overflow: auto;
-  white-space: nowrap;
-  max-width: 870px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; */
+  overflow: hidden;
+  max-width:1200px;
+  max-height: 380px;
+  display: block; */
   flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -201,12 +213,10 @@ li.article-thumb{
 }
 
 .home-human{
-  /* overflow: auto;
-  white-space: nowrap;
-  max-width: 870px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; */
+  overflow: hidden;
+  max-width:1200px;
+  max-height: 380px;
+  display: block; */
  flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -216,12 +226,10 @@ li.article-thumb{
 }
 
 .home-business{
-  /* overflow: auto;
-  white-space: nowrap;
-  max-width: 870px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; */
+  overflow: hidden;
+  max-width:1200px;
+  max-height: 380px;
+  display: block; */
   flex-flow: row;
  display: grid;
  grid-template-columns: repeat(4, 1fr);
@@ -233,7 +241,8 @@ li.article-thumb{
 .home-article-sections h3 {
   margin-left: 50px;
   text-transform: uppercase;
-  font-family: "Gill Sans"
+  font-family: "Gill Sans";
+  color:#fb6a81
 }
 
  h5 {
@@ -254,6 +263,11 @@ text-align: justify;
 margin-left: 280px;
 }
 
+.FullSingleArticle img{
+  width: 700px;
+
+}
+
 .FullSingleArticle h1{
   font-family: "Gill Sans";
   font-size: 50px;
@@ -269,4 +283,163 @@ margin-left: 280px;
 .FullSingleArticle p{
   font-family: "Helvetica Neue";
   line-height: 200%;
+}
+
+/*=========
+  FORM
+=========*/
+.form{
+  display:inline-grid;
+  margin-left: 280px;
+  margin-top: 40px;
+  box-shadow: none;
+  padding-bottom: 20px;
+}
+
+.form .title {
+  flex-direction: column;
+  width: 600px;
+  color: #707070;;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  border-style:solid;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+}
+
+.form textarea {
+  flex-direction: column;
+  width: 600px;
+  height: 80px;
+  wrap: hard;
+  color: #707070;;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  border-style:solid;
+  border-width: 2px;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+}
+
+.form .full-text {
+  flex-direction: column;
+  width: 600px;
+  height: 200px;
+  wrap: hard;
+  color: #707070;;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  border-style:solid;
+  border-width: 2px;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+}
+
+.form h2{
+  color: #707070;
+}
+
+.form .media {
+  flex-direction: column;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  border-style:solid;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+}
+
+.form .date {
+  width: 400px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  border-style:solid;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  color: #707070;
+  border-width: 2px;
+}
+
+.form .category {
+  flex-direction: column;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border-color: #fb6a81;
+  cursor:pointer;
+  box-shadow: none;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  background-color: white;
+  color: #707070;
+  border-width: 2px;
+}
+
+.form .author{
+flex-direction: column;
+padding: 14px 20px;
+margin: 8px 0;
+margin-bottom: 30px;
+border-radius: 4px;
+border-color: #fb6a81;
+cursor:pointer;
+box-shadow: none;
+font-family: "Helvetica Neue";
+font-size: 20px;
+background-color: white;
+color: #707070;
+border-width: 2px;
+}
+
+
+.FullSingleArticle button {
+width: 100%;
+height: 200%;
+background-color: #f6f8f9;
+color: #707070;
+font-size: 20px;
+font-family: "Helvetica Neue";
+text-transform: capitalize;
+font-weight: bold;
+border-radius: 8px;
+margin-top: 10px;
+margin-bottom: 10px;
+padding: 8px;
+}
+
+button {
+width: 100%;
+height: 200%;
+background-color: #f6f8f9;
+color: #707070;
+font-size: 20px;
+font-family: "Helvetica Neue";
+text-transform: capitalize;
+font-weight: bold;
+border-radius: 8px;
+border-color: #fb6a81;
+border-width: 2px;
+
 }
