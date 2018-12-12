@@ -44,6 +44,9 @@ class Header extends Component {
 
         <ul>
         <li className="navLink">
+          <Link to="/articles/favourites"><img src="https://i.ibb.co/vzG3qnF/bookmark.png" id="bookmark"/></Link>
+        </li>
+        <li className="navLink">
           <Link to="/articles/new"><img src="https://i.ibb.co/0mYsY0d/admin.png" id="admin" alt="admin area" /></Link>
         </li>
         </ul>
