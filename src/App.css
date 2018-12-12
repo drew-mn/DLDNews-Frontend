@@ -24,7 +24,7 @@ header {
   height: 64px;
   padding: 0px;
   margin: 0px;
-  margin-left: 220px;
+  margin-left: 240px;
   margin-top: 0px;
 }
 
@@ -74,8 +74,12 @@ header {
 }
 
 #bookmark {
-  height: 30px;
+  height: 20px;
+  width: auto;
   padding-right: 20px;
+  padding-top: 0px;
+  margin-bottom: 5px;
+  /* margin-left: 2px; */
 }
 
 #article-bookmark {
@@ -203,7 +207,7 @@ li.article-thumb{
  grid-template-columns: repeat(4, 1fr);
  grid-template-rows: repeat(1, 1fr);
  grid-gap: 5px;
- align-self: flex-start;
+ align-self:center;
 }
 
 .home-science{
@@ -271,6 +275,11 @@ li.article-thumb{
   float:left;
   margin: 0;
   position: relative;
+}
+
+.bookmarked-section h3{
+  margin-left: 50px;
+  color: #fb6a81;
 }
 
 /*=========

@@ -14,7 +14,7 @@ const Favourites = (props) => {
 
   return (
     <div className="bookmarked-section">
-      <h3>To Read: </h3>
+      <h3>READING LIST: </h3>
       <ul>
         {articles_faves}
       </ul>
