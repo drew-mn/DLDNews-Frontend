@@ -6,15 +6,11 @@ const Featured = (props) => {
 
   const display = props.articles.map((story) => {
     return <div className = "feature-text" key={story.id}>
-
-
       <Link to={'/articles/' + story.id}>
-
-      <img src={story.media} alt={story.title}/>
-      <h2>{story.title}</h2>
-      <p>{story.summary}</p>
-
-    </Link>
+        <img src={story.media} alt={story.title}/>
+        <h2>{story.title}</h2>
+        <p>{story.summary}</p>
+      </Link>
     </div>
   })
 
@@ -22,9 +18,8 @@ const Featured = (props) => {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 4000,
-    slide: true
-
+    speed: 5000,
+    fade: true
   }
 
   return (
@@ -42,19 +37,15 @@ const Featured = (props) => {
         <div>
           {display[0]}
         </div>
-
         <div>
           {display[5]}
         </div>
-
         <div>
           {display[10]}
         </div>
-
         <div>
           {display[15]}
         </div>
-
         <div>
           {display[20]}
         </div>
