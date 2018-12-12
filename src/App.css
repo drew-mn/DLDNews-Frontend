@@ -16,14 +16,16 @@ header {
 
 #header-id {
   flex-grow: 1;
-  background-image:url('./resources/images/header.svg');
+  background-image:url('./resources/images/header3.svg');
   background-repeat:no-repeat;
-  background-position:left;
+  background-position:center;
   position: sticky;
   max-width: 100%;
   height: 64px;
   padding: 0px;
   margin: 0px;
+margin-left: 30px;
+  margin-top: 5px;
 }
 
 /*=========
@@ -33,7 +35,7 @@ header {
 #navbar {
   text-align: center;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 45px;
   color: #949697;
   text-decoration: none;
   background-color: #f6f8f9;
@@ -97,6 +99,12 @@ header {
   font-size: 30px;
   margin-bottom: 10px;
   margin-top: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.feature-text a:link{
+  text-decoration: none;
 }
 
 .feature-text p{
@@ -275,6 +283,7 @@ margin-left: 280px;
   font-size: 50px;
   font-weight: bold;
   line-height: 130%;
+  text-align: left;
 }
 
 .FullSingleArticle h4{

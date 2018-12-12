@@ -36,10 +36,12 @@ class Header extends Component {
         }}
       >
 
+
       <Toolbar>
         <div id="header-id">
-          <img />
+            <img />
         </div>
+
         <ul>
         <li className="navLink">
           <Link to="/articles/new"><img src="https://i.ibb.co/0mYsY0d/admin.png" id="admin" alt="admin area" /></Link>

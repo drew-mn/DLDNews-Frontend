@@ -1,13 +1,20 @@
 import React from 'react';
 import Slider from 'react-slick';
+import {Link} from 'react-router-dom';
 
 const Featured = (props) => {
 
   const display = props.articles.map((story) => {
     return <div className = "feature-text" key={story.id}>
+
+
+      <Link to={'/articles/' + story.id}>
+
       <img src={story.media} alt={story.title}/>
       <h2>{story.title}</h2>
       <p>{story.summary}</p>
+
+    </Link>
     </div>
   })
 
