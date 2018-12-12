@@ -22,7 +22,8 @@ const FullArticle = (props) => {
       <h1>{props.article.title}</h1>
       <img src={props.article.media} alt={props.article.title}/>
       <h4>{props.article.author.name}</h4>
-      <button type="button" className="bookmark-button" onClick={handleBookmark}>Bookmark for Later</button>
+      <Link to="/articles/favourites"><img src="https://i.ibb.co/vzG3qnF/bookmark.png" onClick={handleBookmark} id="article-bookmark"/></Link>
+
       <p>{props.article.summary}</p>
       <p>{props.article.fullText}</p>
       <Link className = "edit-article" to={'/articles/update/' + props.article.id}>
