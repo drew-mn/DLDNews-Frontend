@@ -1,8 +1,12 @@
 body {
-  padding: 0;
+  padding-bottom: 60px;
   margin: 0;
   font-family:"Gill Sans", sans-serif;
 }
+
+/*=========
+  HEADER
+=========*/
 
 
 header {

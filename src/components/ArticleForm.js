@@ -27,6 +27,7 @@ const ArticleForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
+    <h2>ADD NEW ARTICLE</h2>
     <input type="text" placeholder="Title" name="title" className="title" />
 
     <textarea rows="2" cols="20" wrap="hard" placeholder="Summary" name="summary" className="summary" />
