@@ -23,9 +23,6 @@ const Navbar = (props) => {
         <li className="navLink">
           <Link to="/categories/5">HUMAN INTEREST</Link>
         </li>
-        <li className="navLink">
-          <Link to="/articles/new">ADMIN</Link>
-        </li>
       </ul>
     </header>
   )

@@ -26,7 +26,7 @@ const ArticleForm = (props) => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
     <input type="text" placeholder="Title" name="title"/>
     <input type="text" placeholder="Summary" name="summary"/>
     <input type="text" placeholder="Article Text" name="fullText"/>
