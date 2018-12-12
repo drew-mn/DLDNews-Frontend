@@ -24,7 +24,7 @@ const Navbar = (props) => {
           <Link to="/categories/5">HUMAN INTEREST</Link>
         </li>
         <li className="navLink">
-          <Link to="/articles/favourites">FAVOURITES</Link>
+          <Link to="/articles/favourites"><img src="https://i.ibb.co/vzG3qnF/bookmark.png" id="bookmark"/></Link>
         </li>
       </ul>
     </header>
