@@ -14,6 +14,7 @@ const ArticleThumb = (props) => {
     return readTime;
   }
 
+
   return (
     <div class-name="article-thumb">
       <Link to={'/articles/' + id}
