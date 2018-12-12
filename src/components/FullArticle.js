@@ -26,10 +26,10 @@ const FullArticle = (props) => {
       {/* <button type="submit" onClick={onSave}>Bookmark for Later</button> */}
       <p>{props.article.summary}</p>
       <p>{props.article.fullText}</p>
-      <Link to={'/articles/update/' + props.article.id}>
-      <button>Edit Article</button>
+      <Link className = "edit-article" to={'/articles/update/' + props.article.id}>
+      <button>EDIT ARTICLE</button>
       </Link>
-      <button onClick={onDelete}>Delete Article</button>
+      <button onClick={onDelete}>DELETE ARTICLE</button>
     </div>
   )
 

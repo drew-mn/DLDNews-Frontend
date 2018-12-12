@@ -27,18 +27,31 @@ const ArticleForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit} className="form">
+<<<<<<< HEAD
     <input type="text" placeholder="Title" name="title"/>
     <input type="text" placeholder="Summary" name="summary"/>
     <input type="text" placeholder="Article Text" name="fullText"/>
     <select name="category">
+=======
+    <input type="text" placeholder="Title" name="title" className="title" />
+
+    <textarea rows="2" cols="20" wrap="hard" placeholder="Summary" name="summary" className="summary" />
+
+    <textarea rows="2" cols="20" wrap="hard"type="text" placeholder="Article Text" name="fullText" className="full-text"/>
+
+    <select name="category" className="category" >
+>>>>>>> forms
       {categoryOptions}
     </select>
-    <select name="author">
+
+    <select name="author" className="author" >
       {authorOptions}
     </select>
-    <input type="date" placeholder="Date" name="date"/>
-    <input type="text" placeholder="Media" name="media"/>
-    <button type="submit">Save</button>
+    <input type="date" placeholder="Date" name="date" className="date" />
+
+    <input type="text" placeholder="Media" name="media" className="media" />
+
+    <button type="submit">SAVE</button>
     </form>
   )
 }
