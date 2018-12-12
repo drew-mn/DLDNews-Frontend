@@ -6,18 +6,10 @@ const FullArticle = (props) => {
     return null;
   }
 
-  // pass in click event
-  // change the one value to true from false
-  // send that bit plus the rest of a full article back up to ArticleList? Somehwere
-  // then give it to a put request, and have it updaet!
-
-  // eventually will need to populate list of article thumbs where bookmarked = true
-
   function handleBookmark(){
-  // event.preventDefault();
   const article = {
     "bookmarked": true
-  }
+    }
   props.handleBookmarkClick(article);
   }
 

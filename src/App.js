@@ -8,6 +8,7 @@ import ArticleFormContainer from './containers/ArticleFormContainer';
 import FullArticleContainer from './containers/FullArticleContainer';
 import SingleCategoryContainer from './containers/SingleCategoryContainer';
 import UpdateArticleFormContainer from './containers/UpdateArticleFormContainer';
+import FaveContainer from './containers/FaveContainer';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/articles" component={MainContainer} />
             <Route exact path="/articles/new" component={ArticleFormContainer} />
+            <Route exact path="/articles/favourites" component={FaveContainer} />
             <Route exact path="/articles/update/:id" render={(props) => {
               const id = props.match.params.id
               return <UpdateArticleFormContainer id={id} />
