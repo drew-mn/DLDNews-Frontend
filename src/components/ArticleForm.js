@@ -29,9 +29,9 @@ const ArticleForm = (props) => {
     <form onSubmit={handleSubmit} className="form">
     <input type="text" placeholder="Title" name="title" className="title" />
 
-    <input type="text" placeholder="Summary" name="summary" className="summary" />
+    <textarea rows="2" cols="20" wrap="hard" placeholder="Summary" name="summary" className="summary" />
 
-    <input type="text" placeholder="Article Text" name="fullText" className="full-text"/>
+    <textarea rows="2" cols="20" wrap="hard"type="text" placeholder="Article Text" name="fullText" className="full-text"/>
 
     <select name="category" className="category" >
       {categoryOptions}
@@ -43,8 +43,8 @@ const ArticleForm = (props) => {
     <input type="date" placeholder="Date" name="date" className="date" />
 
     <input type="text" placeholder="Media" name="media" className="media" />
-    
-    <button type="submit">Save</button>
+
+    <button type="submit">SAVE</button>
     </form>
   )
 }

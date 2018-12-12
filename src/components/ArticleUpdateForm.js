@@ -23,17 +23,25 @@ const ArticleUpdateForm = (props) => {
   })
 
   return (
-    <form onSubmit={handleSubmit}>
-    <input type="text" placeholder="Title" name="title" defaultValue={props.article.title}/>
-    <input type="text" placeholder="Summary" name="summary" defaultValue={props.article.summary}/>
-    <input type="text" placeholder="Article Text" name="fullText" defaultValue={props.article.fullText}/>
-    <select name="category">
+    <form onSubmit={handleSubmit} className="form">
+    <h2>TITLE</h2>
+    <input type="text" placeholder="Title" name="title" defaultValue={props.article.title} className="title" />
+    <h2>ARTICLE SUMMARY</h2>
+    <textarea rows="2" cols="20" wrap="hard" placeholder="Summary" name="summary"  defaultValue={props.article.summary} className="summary" />
+    <h2>ARTICLE TEXT</h2>
+    <textarea rows="2" cols="20" wrap="hard" placeholder="Article Text" name="fullText" defaultValue={props.article.fullText} className="full-text" />
+    <h2>CATEGORY</h2>
+    <select name="category" className="category" >
       {categoryOptions}
     </select>
-    <input type="text" placeholder="Author" name="author" defaultValue={props.article.author.name}/>
-    <input type="date" placeholder="Date" name="date" defaultValue={props.article.date}/>
-    <input type="text" placeholder="Media" name="media" defaultValue={props.article.media}/>
-    <button type="submit">Save</button>
+    <h2>AUTHOR</h2>
+    <input type="text" placeholder="Author" name="author" defaultValue={props.article.author.name} className="author" />
+    <h2>PUBLICATION DATE</h2>
+    <input type="date" placeholder="Date" name="date" defaultValue={props.article.date} className="date" />
+    <h2>MEDIA</h2>
+    <input type="text" placeholder="Media" name="media" defaultValue={props.article.media} className="media" />
+
+    <button type="submit">SAVE</button>
     </form>
   )
 }
