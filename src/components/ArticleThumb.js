@@ -22,6 +22,7 @@ const ArticleThumb = (props) => {
       <h4>{title}</h4></Link>
       <p>{summary}</p>
        <h5><img src="https://i.ibb.co/nPWqWc9/timer.png" alt="timer icon" id="timer"/>{calcReadTime()} min read </h5>
+
     </div>
   )
 
