@@ -28,6 +28,14 @@ class Request {
     })
   };
 
+  patch(url, payload) {
+    return fetch(url, {
+      method: 'PATCH',
+      body: JSON.stringify(payload),
+      headers: { 'Content-Type': 'application/json'}
+    })
+  };
+
 }
 
 export default Request;

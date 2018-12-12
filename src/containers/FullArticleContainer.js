@@ -29,9 +29,11 @@ class FullArticleContainer extends Component {
 }
 
   handleBookmark(article){
-    const url = '/api/articles/' + article.id;
+    // this.setState({article: })
+    debugger;
+    const url = '/api/articles/' + this.state.article.id;
     let request = new Request();
-    request.put(url, article).then(data => {
+    request.patch(url, article).then(data => {
       window.location = '/articles'
     })
   }
